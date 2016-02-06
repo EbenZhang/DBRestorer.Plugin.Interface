@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows;
 
 namespace DBRestorer.Plugin.Interface
 {
     public interface IPostDbRestore 
     {
-        void OnDBRestored(string sqlInstName, string dbName);
+        void OnDBRestored(Window parentWnd, string sqlInstName, string dbName);
     }
 }
