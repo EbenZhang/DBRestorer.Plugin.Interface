@@ -20,5 +20,10 @@ namespace DBRestorer.Plugin.Interface
         /// The name of the plugin, it will be displayed as sub menu of the plugins menu.
         /// </summary>
         string PluginName { get; }
+
+        /// <summary>
+        /// Does this plugin requires admin privilege
+        /// </summary>
+        bool AdminPrivilegeRequired { get; }
     }
 }
